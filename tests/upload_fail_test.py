@@ -62,6 +62,9 @@ def test_error_no_files():
         files = {"file" : open(f"./test_data/{query_string['file_name']}", "rb")}
 
         # TODO looks like despite hitting apigw presigned 3 times it returns the same key all 3 times -> can be seen in print
+        # s3_create_presigned_url_lambda is designed to give unique keys even if key name is the same
+        # seems like localstack is caching & reusing previous results
+        # ============================================================================
         # produces 500 error -> view ./logs for more infor
         # make post request to presigned url | should trigger lambda & display logs
         res2 = format_res(requests.post(change_host_of_url(post_url), data=post_fields, files=files))
