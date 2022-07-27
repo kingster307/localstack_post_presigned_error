@@ -1,0 +1,588 @@
+2022-07-27T19:33:33.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='patch_get_account_id', value='localstack.aws.accounts:patch_get_account_id', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_partition_adjusting_proxy_listener', value='localstack.plugins:register_partition_adjusting_proxy_listener', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_aws_request_logger', value='localstack_ext.analytics.plugins:add_aws_request_logger', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.651 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_custom_edge_routes', value='localstack_ext.plugins:add_custom_edge_routes', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='add_legacy_iam_enforcement_listener', value='localstack_ext.services.iam.plugins:add_legacy_iam_enforcement_listener', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='extensions_on_infra_start', value='localstack_ext.extensions.plugins:extensions_on_infra_start', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='patch_account_id_resolver', value='localstack_ext.plugins:patch_account_id_resolver', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='patch_get_account_id_from_access_key_id', value='localstack_ext.plugins:patch_get_account_id_from_access_key_id', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='patch_moto_backend_dict', value='localstack_ext.plugins:patch_moto_backend_dict', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.653 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_pods_api', value='localstack_ext.persistence.plugins:register_pods_api', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='register_state_serializer_handlers', value='localstack_ext.persistence.plugins:register_state_serializer_handlers', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] stevedore.extension        : found extension EntryPoint(name='setup_pro_infra', value='localstack_ext.plugins:setup_pro_infra', group='localstack.hooks.on_infra_start')
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.patch_get_account_id = <function patch_get_account_id at 0xfffface3e8c0>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:patch_get_account_id
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_partition_adjusting_proxy_listener = <function register_partition_adjusting_proxy_listener at 0xffffac7d6a70>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:register_partition_adjusting_proxy_listener is disabled
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_aws_request_logger = <function add_aws_request_logger at 0xffffac7d6dd0>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:add_aws_request_logger
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_custom_edge_routes = <function add_custom_edge_routes at 0xffffac81b640>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:add_custom_edge_routes
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_iam_enforcement_listener = <function add_iam_enforcement_listener at 0xffffac82c8b0>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:add_iam_enforcement_listener
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.add_legacy_iam_enforcement_listener = <function add_legacy_iam_enforcement_listener at 0xffffac82c700>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:add_legacy_iam_enforcement_listener is disabled
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.extensions_on_infra_start = <function extensions_on_infra_start at 0xffffac82cc10>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:extensions_on_infra_start
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.patch_account_id_resolver = <function patch_account_id_resolver at 0xffffac81b880>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:patch_account_id_resolver is disabled
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.patch_get_account_id_from_access_key_id = <function patch_get_account_id_from_access_key_id at 0xffffac81b9a0>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:patch_get_account_id_from_access_key_id is disabled
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.patch_moto_backend_dict = <function patch_moto_backend_dict at 0xffffac81b760>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : plugin localstack.hooks.on_infra_start:patch_moto_backend_dict is disabled
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_pods_api = <function register_pods_api at 0xffffac82d090>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:register_pods_api
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.register_state_serializer_handlers = <function register_state_serializer_handlers at 0xffffac82d1b0>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:register_state_serializer_handlers
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : instantiating plugin PluginSpec(localstack.hooks.on_infra_start.setup_pro_infra = <function setup_pro_infra at 0xffffac81bf40>)
+2022-07-27T19:33:33.654 DEBUG --- [  MainThread] plugin.manager             : loading plugin localstack.hooks.on_infra_start:setup_pro_infra
+2022-07-27T19:33:33.670 DEBUG --- [  MainThread] l.bootstrap.install        : Attempting to download local SSL certificate file
+2022-07-27T19:33:33.955 DEBUG --- [  MainThread] localstack.utils.http      : Starting download from https://github.com/localstack/localstack-artifacts/raw/master/local-certs/server.key to /var/lib/localstack/cache/server.test.pem (5237 bytes)
+2022-07-27T19:33:33.962 DEBUG --- [  MainThread] localstack.utils.http      : Done downloading https://github.com/localstack/localstack-artifacts/raw/master/local-certs/server.key, response code 200, total bytes 7693
+2022-07-27T19:33:35.214  INFO --- [  MainThread] l.bootstrap.licensing      : Successfully activated API key
+2022-07-27T19:33:35.252 DEBUG --- [  MainThread] localstack.utils.run       : Executing command: whoami
+2022-07-27T19:33:35.255 DEBUG --- [  MainThread] localstack.utils.run       : Executing command:  python -c "import sys; f=open(sys.argv[1]).read(); open(sys.argv[1], 'w').write('\n' + f)" /etc/resolv.conf
+2022-07-27T19:33:35.267 DEBUG --- [  MainThread] localstack.utils.run       : Executing command:  python -c "import sys; f=open(sys.argv[1]).read(); open(sys.argv[1], 'w').write('nameserver 0.0.0.0\n' + f)" /etc/resolv.conf
+2022-07-27T19:33:35.277 DEBUG --- [  MainThread] localstack.utils.run       : Executing command:  python -c "import sys; f=open(sys.argv[1]).read(); open(sys.argv[1], 'w').write('# The following line is required by LocalStack\n' + f)" /etc/resolv.conf
+2022-07-27T19:33:36.650 DEBUG --- [  MainThread] localstack_ext.plugins     : loading service plugin for azure
+2022-07-27T19:33:36.650 ERROR --- [  MainThread] localstack_ext.plugins     : error while loading service azure: plugin localstack.aws.provider:azure:pro is disabled
+2022-07-27T19:33:36.656  WARN --- [  MainThread] l.services.internal        : Enabling diagnose endpoint, please be aware that this can expose sensitive information via your network.
+2022-07-27T19:33:36.793  INFO --- [  MainThread] l.extensions.platform      : loaded 0 extensions
+2022-07-27T19:33:36.794 DEBUG --- [  MainThread] l.extensions.platform      : calling extensions on_platform_start
+2022-07-27T19:33:36.794 DEBUG --- [  MainThread] l.extensions.platform      : calling extensions update_gateway_routes
+2022-07-27T19:33:36.794 DEBUG --- [  MainThread] l.extensions.platform      : calling extensions update_request_handlers
+2022-07-27T19:33:36.794 DEBUG --- [  MainThread] l.extensions.platform      : calling extensions update_response_handlers
+2022-07-27T19:33:36.794  INFO --- [  MainThread] l.u.aws.metadata_service   : Starting AWS instance metadata service on port 80
+2022-07-27T19:33:36.800  INFO --- [  MainThread] botocore.credentials       : Found credentials in environment variables.
+2022-07-27T19:33:36.892 DEBUG --- [d-2 (worker)] localstack.utils.run       : Executing command: ['zip', '-u', 'DynamoDBLocal.jar', 'log4j2.xml']
+2022-07-27T19:33:36.893 DEBUG --- [d-3 (worker)] l.services.install         : getting kinesis-mock for linux aarch64
+2022-07-27T19:33:36.897 DEBUG --- [d-3 (worker)] l.services.install         : kinesis-mock found at /usr/lib/localstack/kinesis-mock/kinesis-mock.jar
+2022-07-27T19:33:36.948 DEBUG --- [d-2 (worker)] localstack.utils.run       : Executing command: ['unzip', '-o', 'DynamoDBLocal.jar', 'META-INF/MANIFEST.MF']
+2022-07-27T19:33:36.981 DEBUG --- [  Thread-105] l.bootstrap.install        : Using cached SSL certificate (less than 6hrs since last update).
+2022-07-27T19:33:37.156  WARN --- [  Thread-108] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-07-27T19:33:37.156  WARN --- [  Thread-108] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-07-27T19:33:37.160 DEBUG --- [  Thread-105] l.bootstrap.install        : Using cached SSL certificate (less than 6hrs since last update).
+2022-07-27T19:33:37.172  INFO --- [  Thread-108] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-07-27T19:33:37.172  INFO --- [  Thread-108] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2022-07-27T19:33:37.246  WARN --- [  Thread-110] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-07-27T19:33:37.246  WARN --- [  Thread-110] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2022-07-27T19:33:37.247  INFO --- [  Thread-110] hypercorn.error            : Running on https://0.0.0.0:443 (CTRL + C to quit)
+2022-07-27T19:33:37.247  INFO --- [  Thread-110] hypercorn.error            : Running on https://0.0.0.0:443 (CTRL + C to quit)
+2022-07-27T19:33:38.240 DEBUG --- [  MainThread] l.extensions.platform      : calling extensions on_platform_ready
+2022-07-27T19:33:41.626 DEBUG --- [uest_thread)] l.services.dns_server      : Determined fallback dns: 127.0.0.11
+2022-07-27T19:33:48.198 DEBUG --- [   asgi_gw_0] l.services.plugins         : checking service health iam:4566
+2022-07-27T19:33:48.210  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.CreateRole => 200
+2022-07-27T19:33:48.301  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.GetRole => 200
+2022-07-27T19:33:48.315  INFO --- [   asgi_gw_2] botocore.credentials       : Found credentials in environment variables.
+2022-07-27T19:33:48.330 DEBUG --- [   asgi_gw_2] l.services.plugins         : checking service health logs:4566
+2022-07-27T19:33:48.334  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.CreatePolicy => 200
+2022-07-27T19:33:48.349  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS logs.CreateLogGroup => 200
+2022-07-27T19:33:48.389  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.GetPolicy => 200
+2022-07-27T19:33:48.421  INFO --- [  Thread-131] l.services.motoserver      : starting moto server on http://0.0.0.0:38693
+2022-07-27T19:33:48.424  INFO --- [   asgi_gw_5] localstack.services.infra  : Starting mock S3 service on http ports 443/4566 ...
+2022-07-27T19:33:48.446  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS iam.GetPolicyVersion => 200
+2022-07-27T19:33:48.480  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS iam.CreatePolicy => 200
+2022-07-27T19:33:48.485  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.CreateRole => 200
+2022-07-27T19:33:48.488  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS logs.PutRetentionPolicy => 200
+2022-07-27T19:33:48.508  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS s3.CreateBucket => 200
+2022-07-27T19:33:48.513  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS iam.GetRole => 200
+2022-07-27T19:33:48.517  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.GetPolicy => 200
+2022-07-27T19:33:48.524  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS logs.DescribeLogGroups => 200
+2022-07-27T19:33:48.555  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.GetPolicyVersion => 200
+2022-07-27T19:33:48.558  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS logs.ListTagsLogGroup => 200
+2022-07-27T19:33:48.571  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.PutBucketCors => 200
+2022-07-27T19:33:48.584  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS s3.HeadBucket => 200
+2022-07-27T19:33:48.606  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.GetBucketAcl => 200
+2022-07-27T19:33:48.655  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetBucketCors => 200
+2022-07-27T19:33:48.670  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketWebsite => 404 (NoSuchWebsiteConfiguration)
+2022-07-27T19:33:48.690  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketVersioning => 200
+2022-07-27T19:33:48.713  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketAccelerateConfiguration => 200
+2022-07-27T19:33:48.733  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+2022-07-27T19:33:48.750  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:48.753  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.GetBucketRequestPayment => 200
+2022-07-27T19:33:48.785  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS s3.GetBucketLogging => 200
+2022-07-27T19:33:48.816  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:48.827  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:48.845  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.GetBucketLifecycleConfiguration => 404 (NoSuchLifecycleConfiguration)
+2022-07-27T19:33:48.861  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:48.864  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:48.884  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.GetBucketReplication => 404 (ReplicationConfigurationNotFoundError)
+2022-07-27T19:33:48.895  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.GetBucketEncryption => 404 (ServerSideEncryptionConfigurationNotFoundError)
+2022-07-27T19:33:48.906  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.GetObjectLockConfiguration => 404 (ObjectLockConfigurationNotFoundError)
+2022-07-27T19:33:48.916  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.HeadBucket => 200
+2022-07-27T19:33:48.935  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetBucketTagging => 404 (NoSuchTagSet)
+2022-07-27T19:33:48.967  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS iam.ListRolePolicies => 200
+2022-07-27T19:33:48.983  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS iam.CreatePolicy => 200
+2022-07-27T19:33:48.991  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS iam.CreatePolicy => 200
+2022-07-27T19:33:48.993  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:49.027  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS iam.GetPolicy => 200
+2022-07-27T19:33:49.042  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:49.052  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.GetPolicy => 200
+2022-07-27T19:33:49.054  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:49.088  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS iam.GetPolicyVersion => 200
+2022-07-27T19:33:49.089  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS iam.GetPolicyVersion => 200
+2022-07-27T19:33:49.090  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:49.095  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:49.121  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:49.123  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS iam.AttachRolePolicy => 200
+2022-07-27T19:33:49.142  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:49.177  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS iam.ListAttachedRolePolicies => 200
+2022-07-27T19:33:49.587  INFO --- [   asgi_gw_3] localstack.services.infra  : Starting mock Lambda service on http ports 443/4566 ...
+2022-07-27T19:33:49.588 DEBUG --- [  Thread-173] l.s.a.lambda_executors     : Cleaning up docker-reuse executor. Set arn: None
+2022-07-27T19:33:49.588 DEBUG --- [  Thread-173] l.s.a.lambda_executors     : Destroying all running docker-reuse lambda containers
+2022-07-27T19:33:49.588 DEBUG --- [  Thread-173] l.s.a.lambda_executors     : Getting all lambda containers names.
+2022-07-27T19:33:49.588 DEBUG --- [  Thread-173] l.u.c.docker_sdk_client    : Listing containers with filters: {'name': 'localstack_lambda_*'}
+2022-07-27T19:33:49.607 DEBUG --- [  Thread-173] l.s.a.lambda_executors     : Removing 0 containers.
+2022-07-27T19:33:49.607 DEBUG --- [  Thread-173] l.s.a.lambda_executors     : Checking if there are idle containers ...
+2022-07-27T19:33:49.608 DEBUG --- [  Thread-173] l.u.c.container_client     : Getting networks for container: localstack
+2022-07-27T19:33:50.108  INFO --- [   asgi_gw_3] localstack.utils.bootstrap : Execution of "require" took 887.69ms
+2022-07-27T19:33:50.112 DEBUG --- [  Thread-178] l.s.a.lambda_executors     : Cleaning up docker-reuse executor. Set arn: arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:33:50.137 DEBUG --- [  Thread-178] l.s.a.lambda_executors     : Cleaning up docker-reuse executor. Set arn: arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:33:50.174 DEBUG --- [  Thread-178] localstack.utils.run       : Executing command: ['unzip', '-o', '-q', '/var/lib/localstack/tmp/zipfile.f94d9f14/original_lambda_archive.zip']
+2022-07-27T19:33:50.621  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.CreateFunction => 200
+2022-07-27T19:33:55.653  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS lambda.GetFunction => 200
+2022-07-27T19:33:55.670  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.GetFunction => 200
+2022-07-27T19:33:55.685  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+2022-07-27T19:33:55.700  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+2022-07-27T19:33:55.722 DEBUG --- [  Thread-190] l.s.a.lambda_executors     : Cleaning up docker-reuse executor. Set arn: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:33:55.739 DEBUG --- [  Thread-190] l.s.a.lambda_executors     : Cleaning up docker-reuse executor. Set arn: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:33:55.745  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS logs.CreateLogGroup => 200
+2022-07-27T19:33:55.771  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS logs.PutRetentionPolicy => 200
+2022-07-27T19:33:55.782  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS logs.DescribeLogGroups => 200
+2022-07-27T19:33:55.792  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS logs.ListTagsLogGroup => 200
+2022-07-27T19:33:55.800 DEBUG --- [  Thread-190] localstack.utils.run       : Executing command: ['unzip', '-o', '-q', '/var/lib/localstack/tmp/zipfile.3434a7a6/original_lambda_archive.zip']
+2022-07-27T19:33:55.837 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Creating IAM policy "lambda_policy_s3OnObjectCreatedLambda-dd2c127_latest" for Lambda resource arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:33:55.845  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS lambda.AddPermission => 200
+2022-07-27T19:33:55.968  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS lambda.GetPolicy => 200
+2022-07-27T19:33:56.234  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.CreateFunction => 200
+2022-07-27T19:34:01.270  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS lambda.GetFunction => 200
+2022-07-27T19:34:01.279  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS lambda.GetFunction => 200
+2022-07-27T19:34:01.289  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS lambda.ListVersionsByFunction => 200
+2022-07-27T19:34:01.299  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS lambda.GetFunctionCodeSigningConfig => 200
+2022-07-27T19:34:01.409 DEBUG --- [   asgi_gw_2] l.s.apigateway.router_asf  : Registering parameterized API gateway routes.
+2022-07-27T19:34:01.413 DEBUG --- [   asgi_gw_2] l.services.plugins         : checking service health apigateway:4566
+2022-07-27T19:34:01.455  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS apigateway.CreateRestApi => 201
+2022-07-27T19:34:01.472  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS apigateway.PutRestApi => 200
+2022-07-27T19:34:01.483  INFO --- [   asgi_gw_0] l.s.apigateway.helpers     : Missing "value" in JSONPatch operation for {'id': 'kdeyzjgjsb', 'region_name': 'us-west-2', 'name': 'apiGateway', 'description': None, 'version': 'V1', 'binaryMediaTypes': [], 'create_date': 1658950441, 'api_key_source': 'HEADER', 'policy': None, 'endpoint_configuration': {'types': ['EDGE']}, 'tags': {}, 'disableExecuteApiEndpoint': False, 'minimum_compression_size': None, 'deployments': {}, 'authorizers': {}, 'gateway_responses': {}, 'stages': {}, 'resources': {'xb07u7fmsu': <moto.apigateway.models.Resource object at 0xffff1184eda0>, 'oftzn9q5gj': <moto.apigateway.models.Resource object at 0xffff1184ed40>, 'foff8n4zeh': <moto.apigateway.models.Resource object at 0xffff1184ee90>}, 'models': {}, 'request_validators': {}, 'default': <moto.apigateway.models.Resource object at 0xffff1184e080>}: {'op': 'add', 'path': '/binaryMediaTypes/needs_this_so_pulumi_does_not_add~1default_binary_media_type'}
+2022-07-27T19:34:01.484  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.UpdateRestApi => 200
+2022-07-27T19:34:01.492  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS apigateway.GetRestApi => 200
+2022-07-27T19:34:01.551  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS apigateway.GetResources => 200
+2022-07-27T19:34:01.582  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS apigateway.CreateDeployment => 200
+2022-07-27T19:34:01.591  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS apigateway.GetDeployment => 200
+2022-07-27T19:34:01.782 DEBUG --- [uest_thread)] l.s.awslambda.lambda_api   : Creating IAM policy "lambda_policy_s3CreatePresignedUrlLambda-fdfcbf5_latest" for Lambda resource arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:01.789  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS lambda.AddPermission => 200
+2022-07-27T19:34:01.976  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS lambda.GetPolicy => 200
+2022-07-27T19:34:02.010  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS apigateway.CreateStage => 200
+2022-07-27T19:34:02.025  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS apigateway.UpdateStage => 200
+2022-07-27T19:34:02.034  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS apigateway.GetStage => 200
+2022-07-27T19:34:02.129  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.PutBucketNotificationConfiguration => 200
+2022-07-27T19:34:02.151  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.GetBucketNotificationConfiguration => 200
+2022-07-27T19:34:03.017  INFO --- [   asgi_gw_1] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:34:03.017 DEBUG --- [   asgi_gw_1] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:34:03.117 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting ipv4 address for container localstack in network devnet.
+2022-07-27T19:34:03.132  INFO --- [   asgi_gw_1] l.u.container_networking   : Determined main container target IP: 169.254.170.2
+2022-07-27T19:34:03.132  INFO --- [   asgi_gw_1] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:03.132 DEBUG --- [   asgi_gw_1] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:34:03.132 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:34:03.154 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Priming Docker container (status "0"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:03.163 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Creating container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:03.164 DEBUG --- [   asgi_gw_1] l.s.a.lambda_launcher      : Executing docker reuse container creation hook for function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:03.336 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:03.491 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Creating docker-reuse Lambda container localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5 from image localstack/lambda:python3.7
+2022-07-27T19:34:03.492 DEBUG --- [   asgi_gw_1] l.u.c.docker_sdk_client    : Creating container with attributes: {'mount_volumes': None, 'ports': None, 'cap_add': ['NET_ADMIN'], 'cap_drop': None, 'security_opt': None, 'dns': '127.0.0.1', 'additional_flags': None, 'workdir': None, 'command': ['lambda_function.lambda_handler'], 'detach': False, 'entrypoint': '/tmp/f46574b4.sh', 'env_vars': {'BUCKET': 'proj-bucket-prefix-20220727193348156300000001', 'ENV': 'ls_local', 'PREFIX': 'presigned_url_prefix/', 'AWS_ACCESS_KEY_ID': 'test', 'AWS_SECRET_ACCESS_KEY': 'test', 'AWS_REGION': 'us-west-2', 'LOCALSTACK_HOSTNAME': '169.254.170.2', 'AWS_ENDPOINT_URL': 'http://169.254.170.2:4566', 'EDGE_PORT': '443', '_HANDLER': 'lambda_function.lambda_handler', 'AWS_LAMBDA_FUNCTION_TIMEOUT': '29', 'AWS_LAMBDA_FUNCTION_NAME': 's3CreatePresignedUrlLambda-fdfcbf5', 'AWS_LAMBDA_FUNCTION_VERSION': '$LATEST', 'AWS_LAMBDA_FUNCTION_INVOKED_ARN': 'arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5', '_LAMBDA_SERVER_PORT': '5000', 'DOCKER_LAMBDA_STAY_OPEN': '1', 'LOCALSTACK_DEBUG': '1'}, 'image_name': 'localstack/lambda:python3.7', 'interactive': False, 'name': 'localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5', 'network': 'devnet', 'remove': True, 'self': <localstack.utils.container_utils.docker_sdk_client.SdkDockerClient object at 0xffffae0666b0>, 'tty': False, 'user': 'root'}
+2022-07-27T19:34:03.602 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Copying "/var/lib/localstack/tmp/zipfile.3434a7a6/." to "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5:/var/task".
+2022-07-27T19:34:03.602 DEBUG --- [   asgi_gw_1] l.u.c.docker_sdk_client    : Copying file /var/lib/localstack/tmp/zipfile.3434a7a6/. into localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5:/var/task
+2022-07-27T19:34:03.867 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Copying "/var/lib/localstack/tmp/f46574b4.sh" to "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5:/tmp/f46574b4.sh".
+2022-07-27T19:34:03.867 DEBUG --- [   asgi_gw_1] l.u.c.docker_sdk_client    : Copying file /var/lib/localstack/tmp/f46574b4.sh into localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5:/tmp/f46574b4.sh
+2022-07-27T19:34:04.021 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Starting docker-reuse Lambda container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:04.021 DEBUG --- [   asgi_gw_1] l.u.c.docker_sdk_client    : Starting container localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:05.146 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:05.182 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:05.197 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:34:05.221 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:34:06.894 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"large.csv\", \"x-amz-meta-very-important\": \"L\", \"key\": \"presigned_url_prefix/28bbed43-abf3-47c3-bce6-73a355701788\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6MzQ6MDZaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4LzI4YmJlZDQzLWFiZjMtNDdjMy1iY2U2LTczYTM1NTcwMTc4OCJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2UuY3N2Il0sIFsiZXEiLCAiJHgtYW16LW1ldGEtdmVyeS1pbXBvcnRhbnQiLCAiTCJdLCB7ImJ1Y2tldCI6ICJwcm9qLWJ1Y2tldC1wcmVmaXgtMjAyMjA3MjcxOTMzNDgxNTYzMDAwMDAwMDEifSwgeyJrZXkiOiAicHJlc2lnbmVkX3VybF9wcmVmaXgvMjhiYmVkNDMtYWJmMy00N2MzLWJjZTYtNzNhMzU1NzAxNzg4In1dfQ==\", \"signature\": \"MK2iKf5pJZNCfEJPqFGXep6GEtM=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'large.csv', 'very_important_meta': 'L', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['large.csv'], 'very_important_meta': ['L'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': 'c1efef81-b10e-4e71-8ce8-b09afd2b6b0d', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:34:03 +0000', 'requestTimeEpoch': 1658950443017, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:34:06.986 DEBUG --- [   asgi_gw_0] l.services.plugins         : checking service health cloudwatch:4566
+2022-07-27T19:34:06.992  INFO --- [   asgi_gw_1] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:34:07.097 DEBUG --- [uest_thread)] l.s.a.lambda_executors     : Lambda executed in Event (asynchronous) mode, no response will be returned to caller
+2022-07-27T19:34:07.097  INFO --- [  Thread-233] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:07.097 DEBUG --- [  Thread-233] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:34:07.097 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127".
+2022-07-27T19:34:07.102  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.DeleteObjects => 204
+2022-07-27T19:34:07.104 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Priming Docker container (status "0"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:07.110 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Creating container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:07.111 DEBUG --- [  Thread-233] l.s.a.lambda_launcher      : Executing docker reuse container creation hook for function arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:07.157 DEBUG --- [  Thread-233] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:07.177  INFO --- [   asgi_gw_3] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:34:07.177 DEBUG --- [   asgi_gw_3] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:34:07.178  INFO --- [   asgi_gw_3] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:07.178 DEBUG --- [   asgi_gw_3] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:34:07.182 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Creating docker-reuse Lambda container localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127 from image localstack/lambda:python3.7
+2022-07-27T19:34:07.182 DEBUG --- [  Thread-233] l.u.c.docker_sdk_client    : Creating container with attributes: {'mount_volumes': None, 'ports': None, 'cap_add': ['NET_ADMIN'], 'cap_drop': None, 'security_opt': None, 'dns': '127.0.0.1', 'additional_flags': None, 'workdir': None, 'command': ['lambda_function.lambda_handler'], 'detach': False, 'entrypoint': '/tmp/c595fa94.sh', 'env_vars': {'AWS_ACCESS_KEY_ID': 'test', 'AWS_SECRET_ACCESS_KEY': 'test', 'AWS_REGION': 'us-west-2', 'LOCALSTACK_HOSTNAME': '169.254.170.2', 'AWS_ENDPOINT_URL': 'http://169.254.170.2:4566', 'EDGE_PORT': '443', '_HANDLER': 'lambda_function.lambda_handler', 'AWS_LAMBDA_FUNCTION_TIMEOUT': '900', 'AWS_LAMBDA_FUNCTION_NAME': 's3OnObjectCreatedLambda-dd2c127', 'AWS_LAMBDA_FUNCTION_VERSION': '$LATEST', 'AWS_LAMBDA_FUNCTION_INVOKED_ARN': 'arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127', '_LAMBDA_SERVER_PORT': '5001', 'DOCKER_LAMBDA_STAY_OPEN': '1', 'LOCALSTACK_DEBUG': '1'}, 'image_name': 'localstack/lambda:python3.7', 'interactive': False, 'name': 'localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127', 'network': 'devnet', 'remove': True, 'self': <localstack.utils.container_utils.docker_sdk_client.SdkDockerClient object at 0xffffae0666b0>, 'tty': False, 'user': 'root'}
+2022-07-27T19:34:07.218 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Copying "/var/lib/localstack/tmp/zipfile.f94d9f14/." to "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127:/var/task".
+2022-07-27T19:34:07.219 DEBUG --- [  Thread-233] l.u.c.docker_sdk_client    : Copying file /var/lib/localstack/tmp/zipfile.f94d9f14/. into localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127:/var/task
+2022-07-27T19:34:07.355 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Copying "/var/lib/localstack/tmp/c595fa94.sh" to "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127:/tmp/c595fa94.sh".
+2022-07-27T19:34:07.356 DEBUG --- [  Thread-233] l.u.c.docker_sdk_client    : Copying file /var/lib/localstack/tmp/c595fa94.sh into localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127:/tmp/c595fa94.sh
+2022-07-27T19:34:07.468 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Starting docker-reuse Lambda container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:07.469 DEBUG --- [  Thread-233] l.u.c.docker_sdk_client    : Starting container localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:08.397 DEBUG --- [  Thread-233] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:34:08.427 DEBUG --- [  Thread-233] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:08.438 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127" on network "devnet".
+2022-07-27T19:34:08.440 DEBUG --- [   asgi_gw_3] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:34:08.451 DEBUG --- [   asgi_gw_3] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:08.489 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Calling http://169.254.170.4:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:34:08.489 DEBUG --- [   asgi_gw_3] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:08.522 DEBUG --- [  Thread-233] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127 result / log output:
+
+>
+2022-07-27T19:34:08.530 DEBUG --- [   asgi_gw_3] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:08.549 DEBUG --- [   asgi_gw_3] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:34:08.568 DEBUG --- [   asgi_gw_3] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:34:08.638 DEBUG --- [   asgi_gw_3] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"larger.csv\", \"x-amz-meta-very-important\": \"XL\", \"key\": \"presigned_url_prefix/2a1736f5-0d45-47df-b140-ea332a969abd\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6MzQ6MDhaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4LzJhMTczNmY1LTBkNDUtNDdkZi1iMTQwLWVhMzMyYTk2OWFiZCJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2VyLmNzdiJdLCBbImVxIiwgIiR4LWFtei1tZXRhLXZlcnktaW1wb3J0YW50IiwgIlhMIl0sIHsiYnVja2V0IjogInByb2otYnVja2V0LXByZWZpeC0yMDIyMDcyNzE5MzM0ODE1NjMwMDAwMDAwMSJ9LCB7ImtleSI6ICJwcmVzaWduZWRfdXJsX3ByZWZpeC8yYTE3MzZmNS0wZDQ1LTQ3ZGYtYjE0MC1lYTMzMmE5NjlhYmQifV19\", \"signature\": \"ZavN0Zfoehh/srGUyGF0iu/5Uc8=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'larger.csv', 'very_important_meta': 'XL', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['larger.csv'], 'very_important_meta': ['XL'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': 'a28f5b6e-ff6a-4a15-b8c0-3d0aa3cc1bb9', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:34:07 +0000', 'requestTimeEpoch': 1658950447177, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:34:08.703  INFO --- [   asgi_gw_3] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:34:08.722 ERROR --- [   asgi_gw_1] l.aws.handlers.logging     : exception during call chain
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 57, in handle
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/service.py", line 31, in __call__
+    service = determine_aws_service_name(context.request)
+  File "/opt/code/localstack/localstack/aws/protocol/service_router.py", line 314, in determine_aws_service_name
+    values = request.values
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 448, in values
+    sources.append(self.form)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 428, in form
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:08.723 DEBUG --- [   asgi_gw_1] l.aws.handlers.fallback    : setting internal failure response for 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:08.724 ERROR --- [   asgi_gw_1] localstack.aws.chain       : exception while running response handler
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 122, in _call_response_handlers
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 47, in __call__
+    self._log(context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 142, in _log
+    "input": restore_payload(context.request),
+  File "/opt/code/localstack/localstack/http/request.py", line 220, in restore_payload
+    data = request.data
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 354, in data
+    return self.get_data(parse_form_data=True)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 404, in get_data
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:08.792  INFO --- [   asgi_gw_0] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:34:08.792 DEBUG --- [   asgi_gw_0] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:34:08.793  INFO --- [   asgi_gw_0] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:08.793 DEBUG --- [   asgi_gw_0] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:34:08.793 DEBUG --- [   asgi_gw_0] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:34:08.803 DEBUG --- [   asgi_gw_0] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:08.824 DEBUG --- [   asgi_gw_0] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:34:08.850 DEBUG --- [   asgi_gw_0] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:34:08.863 DEBUG --- [   asgi_gw_0] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:34:08.877 DEBUG --- [   asgi_gw_0] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:34:08.935 DEBUG --- [   asgi_gw_0] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"largest.csv\", \"x-amz-meta-very-important\": \"XXL\", \"key\": \"presigned_url_prefix/a7e49c36-bfb6-42ba-8c2e-93d897bf47d5\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6MzQ6MDhaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4L2E3ZTQ5YzM2LWJmYjYtNDJiYS04YzJlLTkzZDg5N2JmNDdkNSJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2VzdC5jc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS12ZXJ5LWltcG9ydGFudCIsICJYWEwiXSwgeyJidWNrZXQiOiAicHJvai1idWNrZXQtcHJlZml4LTIwMjIwNzI3MTkzMzQ4MTU2MzAwMDAwMDAxIn0sIHsia2V5IjogInByZXNpZ25lZF91cmxfcHJlZml4L2E3ZTQ5YzM2LWJmYjYtNDJiYS04YzJlLTkzZDg5N2JmNDdkNSJ9XX0=\", \"signature\": \"cu9u4XpSXBH0PADqFTJzZybt64M=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'largest.csv', 'very_important_meta': 'XXL', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['largest.csv'], 'very_important_meta': ['XXL'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': '65d234d7-5ad8-4395-a8b7-32b5936af6e8', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:34:08 +0000', 'requestTimeEpoch': 1658950448792, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:34:08.952  INFO --- [   asgi_gw_0] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:34:09.016 ERROR --- [   asgi_gw_5] l.aws.handlers.logging     : exception during call chain
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 57, in handle
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/service.py", line 31, in __call__
+    service = determine_aws_service_name(context.request)
+  File "/opt/code/localstack/localstack/aws/protocol/service_router.py", line 314, in determine_aws_service_name
+    values = request.values
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 448, in values
+    sources.append(self.form)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 428, in form
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:09.017 DEBUG --- [   asgi_gw_5] l.aws.handlers.fallback    : setting internal failure response for 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:09.017 ERROR --- [   asgi_gw_5] localstack.aws.chain       : exception while running response handler
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 122, in _call_response_handlers
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 47, in __call__
+    self._log(context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 142, in _log
+    "input": restore_payload(context.request),
+  File "/opt/code/localstack/localstack/http/request.py", line 220, in restore_payload
+    data = request.data
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 354, in data
+    return self.get_data(parse_form_data=True)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 404, in get_data
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:34:49.609 DEBUG --- [  Thread-174] l.s.a.lambda_executors     : Checking if there are idle containers ...
+2022-07-27T19:35:49.611 DEBUG --- [  Thread-282] l.s.a.lambda_executors     : Checking if there are idle containers ...
+2022-07-27T19:36:49.616 DEBUG --- [  Thread-303] l.s.a.lambda_executors     : Checking if there are idle containers ...
+2022-07-27T19:37:24.337  INFO --- [   asgi_gw_2] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:37:24.337 DEBUG --- [   asgi_gw_2] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:37:24.338  INFO --- [   asgi_gw_2] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.338 DEBUG --- [   asgi_gw_2] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:37:24.338 DEBUG --- [   asgi_gw_2] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:37:24.346 DEBUG --- [   asgi_gw_2] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.372 DEBUG --- [   asgi_gw_2] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.398 DEBUG --- [   asgi_gw_2] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:37:24.403 DEBUG --- [   asgi_gw_2] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:37:24.423 DEBUG --- [   asgi_gw_2] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:37:24.508 DEBUG --- [   asgi_gw_2] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"large.csv\", \"x-amz-meta-very-important\": \"L\", \"key\": \"presigned_url_prefix/15497812-8068-4e61-b06a-7e611d39eca9\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6Mzc6MjRaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4LzE1NDk3ODEyLTgwNjgtNGU2MS1iMDZhLTdlNjExZDM5ZWNhOSJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2UuY3N2Il0sIFsiZXEiLCAiJHgtYW16LW1ldGEtdmVyeS1pbXBvcnRhbnQiLCAiTCJdLCB7ImJ1Y2tldCI6ICJwcm9qLWJ1Y2tldC1wcmVmaXgtMjAyMjA3MjcxOTMzNDgxNTYzMDAwMDAwMDEifSwgeyJrZXkiOiAicHJlc2lnbmVkX3VybF9wcmVmaXgvMTU0OTc4MTItODA2OC00ZTYxLWIwNmEtN2U2MTFkMzllY2E5In1dfQ==\", \"signature\": \"jfU1w6mhjwQHhJuYIilFFOL2TO4=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'large.csv', 'very_important_meta': 'L', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['large.csv'], 'very_important_meta': ['L'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': 'e666e1fd-f1ff-45e5-b5ef-d1dfbe295970', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:37:24 +0000', 'requestTimeEpoch': 1658950644337, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:37:24.577  INFO --- [   asgi_gw_2] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:37:24.619 DEBUG --- [uest_thread)] l.s.a.lambda_executors     : Lambda executed in Event (asynchronous) mode, no response will be returned to caller
+2022-07-27T19:37:24.620  INFO --- [  Thread-349] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:37:24.620 DEBUG --- [  Thread-349] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:37:24.620 DEBUG --- [  Thread-349] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127".
+2022-07-27T19:37:24.626  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.DeleteObjects => 204
+2022-07-27T19:37:24.626 DEBUG --- [  Thread-349] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:37:24.643 DEBUG --- [  Thread-349] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127
+2022-07-27T19:37:24.666 DEBUG --- [  Thread-349] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:37:24.671 DEBUG --- [  Thread-349] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3OnObjectCreatedLambda-dd2c127" on network "devnet".
+2022-07-27T19:37:24.692 DEBUG --- [  Thread-349] l.s.a.lambda_executors     : Calling http://169.254.170.4:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:37:24.697 DEBUG --- [  Thread-349] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3OnObjectCreatedLambda-dd2c127 result / log output:
+
+>
+2022-07-27T19:37:24.704  INFO --- [   asgi_gw_5] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:37:24.705 DEBUG --- [   asgi_gw_5] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:37:24.705  INFO --- [   asgi_gw_5] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.705 DEBUG --- [   asgi_gw_5] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:37:24.705 DEBUG --- [   asgi_gw_5] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:37:24.718 DEBUG --- [   asgi_gw_5] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.742 DEBUG --- [   asgi_gw_5] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.767 DEBUG --- [   asgi_gw_5] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:37:24.772 DEBUG --- [   asgi_gw_5] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:37:24.793 DEBUG --- [   asgi_gw_5] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:37:24.842 DEBUG --- [   asgi_gw_5] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"larger.csv\", \"x-amz-meta-very-important\": \"XL\", \"key\": \"presigned_url_prefix/84933583-b963-498f-9e83-52920d08a69b\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6Mzc6MjRaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4Lzg0OTMzNTgzLWI5NjMtNDk4Zi05ZTgzLTUyOTIwZDA4YTY5YiJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2VyLmNzdiJdLCBbImVxIiwgIiR4LWFtei1tZXRhLXZlcnktaW1wb3J0YW50IiwgIlhMIl0sIHsiYnVja2V0IjogInByb2otYnVja2V0LXByZWZpeC0yMDIyMDcyNzE5MzM0ODE1NjMwMDAwMDAwMSJ9LCB7ImtleSI6ICJwcmVzaWduZWRfdXJsX3ByZWZpeC84NDkzMzU4My1iOTYzLTQ5OGYtOWU4My01MjkyMGQwOGE2OWIifV19\", \"signature\": \"tmPbpaYYoVhX7k0ufsJcNBbxJoU=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'larger.csv', 'very_important_meta': 'XL', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['larger.csv'], 'very_important_meta': ['XL'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': 'b8486fed-bdb3-4461-9481-7f5c63abc0d6', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:37:24 +0000', 'requestTimeEpoch': 1658950644704, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:37:24.906  INFO --- [   asgi_gw_5] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:37:24.922 ERROR --- [   asgi_gw_4] l.aws.handlers.logging     : exception during call chain
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 57, in handle
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/service.py", line 31, in __call__
+    service = determine_aws_service_name(context.request)
+  File "/opt/code/localstack/localstack/aws/protocol/service_router.py", line 314, in determine_aws_service_name
+    values = request.values
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 448, in values
+    sources.append(self.form)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 428, in form
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:24.923 DEBUG --- [   asgi_gw_4] l.aws.handlers.fallback    : setting internal failure response for 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:24.923 ERROR --- [   asgi_gw_4] localstack.aws.chain       : exception while running response handler
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 122, in _call_response_handlers
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 47, in __call__
+    self._log(context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 142, in _log
+    "input": restore_payload(context.request),
+  File "/opt/code/localstack/localstack/http/request.py", line 220, in restore_payload
+    data = request.data
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 354, in data
+    return self.get_data(parse_form_data=True)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 404, in get_data
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:24.988  INFO --- [   asgi_gw_1] l.s.apigateway.integration : Method request body before transformations: 
+2022-07-27T19:37:24.988 DEBUG --- [   asgi_gw_1] l.s.awslambda.lambda_api   : Running Lambda function arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 from API Gateway invocation: GET /get_presigned_url
+2022-07-27T19:37:24.988  INFO --- [   asgi_gw_1] l.s.a.lambda_executors     : Running lambda: arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:24.988 DEBUG --- [   asgi_gw_1] l.s.a.lambda_launcher      : Executing docker-reuse Lambda container invocation
+2022-07-27T19:37:24.988 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Priming docker container with runtime "python3.7" and arn "arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5".
+2022-07-27T19:37:24.994 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Priming Docker container (status "1"): localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:25.002 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting networks for container: localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5
+2022-07-27T19:37:25.034 DEBUG --- [   asgi_gw_1] l.u.c.container_client     : Getting the entrypoint for image: localstack/lambda:python3.7
+2022-07-27T19:37:25.039 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Using entrypoint "/var/rapid/init --bootstrap /var/runtime/bootstrap" for container "localstack_lambda_arn_aws_lambda_us-west-2_000000000000_function_s3CreatePresignedUrlLambda-fdfcbf5" on network "devnet".
+2022-07-27T19:37:25.061 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Calling http://169.254.170.3:9001 to run invocation in docker-reuse Lambda container
+2022-07-27T19:37:25.112 DEBUG --- [   asgi_gw_1] l.s.a.lambda_executors     : Lambda arn:aws:lambda:us-west-2:000000000000:function:s3CreatePresignedUrlLambda-fdfcbf5 result / log output:
+{"statusCode": 200, "headers": {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Credentials": "true", "Access-Control-Allow-Headers": "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token"}, "body": "{\"status\": true, \"message\": null, \"data\": {\"url\": \"http://169.254.170.2:4566/proj-bucket-prefix-20220727193348156300000001\", \"fields\": {\"content-type\": \"csv\", \"x-amz-meta-action\": \"upload\", \"x-amz-meta-filename\": \"largest.csv\", \"x-amz-meta-very-important\": \"XXL\", \"key\": \"presigned_url_prefix/bf1ab9c7-44ba-4c4e-afb4-f07096ce043d\", \"AWSAccessKeyId\": \"test\", \"policy\": \"eyJleHBpcmF0aW9uIjogIjIwMjItMDctMjdUMjA6Mzc6MjVaIiwgImNvbmRpdGlvbnMiOiBbWyJlcSIsICIka2V5IiwgInByZXNpZ25lZF91cmxfcHJlZml4L2JmMWFiOWM3LTQ0YmEtNGM0ZS1hZmI0LWYwNzA5NmNlMDQzZCJdLCBbImNvbnRlbnQtbGVuZ3RoLXJhbmdlIiwgMSwgMTAwMDAwMDAwMF0sIFsiZXEiLCAiJGNvbnRlbnQtdHlwZSIsICJjc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS1hY3Rpb24iLCAidXBsb2FkIl0sIFsiZXEiLCAiJHgtYW16LW1ldGEtZmlsZW5hbWUiLCAibGFyZ2VzdC5jc3YiXSwgWyJlcSIsICIkeC1hbXotbWV0YS12ZXJ5LWltcG9ydGFudCIsICJYWEwiXSwgeyJidWNrZXQiOiAicHJvai1idWNrZXQtcHJlZml4LTIwMjIwNzI3MTkzMzQ4MTU2MzAwMDAwMDAxIn0sIHsia2V5IjogInByZXNpZ25lZF91cmxfcHJlZml4L2JmMWFiOWM3LTQ0YmEtNGM0ZS1hZmI0LWYwNzA5NmNlMDQzZCJ9XX0=\", \"signature\": \"+rtc6Vc6c14NDl0XQl1j3Nu3yuE=\"}}}"}
+>{'path': '/get_presigned_url', 'headers': {'Host': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'User-Agent': 'python-requests/2.27.1', 'accept-encoding': 'gzip, deflate', 'accept': '*/*', 'Connection': 'keep-alive', 'x-localstack-tgt-api': 'apigateway', 'X-Forwarded-For': '169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'x-localstack-edge': 'http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566', 'Authorization': ''}, 'multiValueHeaders': {'Host': ['kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'User-Agent': ['python-requests/2.27.1'], 'accept-encoding': ['gzip, deflate'], 'accept': ['*/*'], 'Connection': ['keep-alive'], 'x-localstack-tgt-api': ['apigateway'], 'X-Forwarded-For': ['169.254.170.1, kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'x-localstack-edge': ['http://kdeyzjgjsb.execute-api.localhost.localstack.cloud:4566'], 'Authorization': ['']}, 'body': '', 'isBase64Encoded': False, 'httpMethod': 'GET', 'queryStringParameters': {'action': 'upload', 'file_name': 'largest.csv', 'very_important_meta': 'XXL', 'content_type': 'csv'}, 'multiValueQueryStringParameters': {'action': ['upload'], 'file_name': ['largest.csv'], 'very_important_meta': ['XXL'], 'content_type': ['csv']}, 'pathParameters': {}, 'resource': '/get_presigned_url', 'requestContext': {'accountId': '000000000000', 'apiId': 'kdeyzjgjsb', 'resourcePath': '/get_presigned_url', 'domainPrefix': 'kdeyzjgjsb', 'domainName': 'kdeyzjgjsb.execute-api.localhost.localstack.cloud', 'resourceId': 'foff8n4zeh', 'requestId': '55c7e789-31bd-45e5-abbe-9b31d1e7c200', 'identity': {'accountId': '000000000000', 'sourceIp': '169.254.170.1', 'userAgent': 'python-requests/2.27.1'}, 'httpMethod': 'GET', 'protocol': 'HTTP/1.1', 'requestTime': '27/Jul/2022:19:37:24 +0000', 'requestTimeEpoch': 1658950644988, 'authorizer': {'context': {}, 'identity': {}}, 'path': '/api/get_presigned_url', 'stage': 'api'}, 'stageVariables': {}}
+2022-07-27T19:37:25.127  INFO --- [   asgi_gw_1] localstack.request.http    : GET /api/get_presigned_url => 200
+2022-07-27T19:37:25.165 ERROR --- [   asgi_gw_2] l.aws.handlers.logging     : exception during call chain
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 57, in handle
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/service.py", line 31, in __call__
+    service = determine_aws_service_name(context.request)
+  File "/opt/code/localstack/localstack/aws/protocol/service_router.py", line 314, in determine_aws_service_name
+    values = request.values
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 448, in values
+    sources.append(self.form)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 428, in form
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:25.166 DEBUG --- [   asgi_gw_2] l.aws.handlers.fallback    : setting internal failure response for 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:25.166 ERROR --- [   asgi_gw_2] localstack.aws.chain       : exception while running response handler
+Traceback (most recent call last):
+  File "/opt/code/localstack/localstack/aws/chain.py", line 122, in _call_response_handlers
+    handler(self, self.context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 47, in __call__
+    self._log(context, response)
+  File "/opt/code/localstack/localstack/aws/handlers/logging.py", line 142, in _log
+    "input": restore_payload(context.request),
+  File "/opt/code/localstack/localstack/http/request.py", line 220, in restore_payload
+    data = request.data
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/utils.py", line 107, in __get__
+    value = self.fget(obj)  # type: ignore
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 354, in data
+    return self.get_data(parse_form_data=True)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 404, in get_data
+    self._load_form_data()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wrappers/request.py", line 266, in _load_form_data
+    data = parser.parse(
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 263, in parse
+    return parse_func(self, stream, mimetype, content_length, options)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 140, in wrapper
+    return f(self, stream, *args, **kwargs)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 290, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/formparser.py", line 418, in parse
+    for data in iterator:
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 653, in _make_chunk_iter
+    item = _read(buffer_size)
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 925, in read
+    return self.on_disconnect()
+  File "/opt/code/localstack/.venv/lib/python3.10/site-packages/werkzeug/wsgi.py", line 893, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2022-07-27T19:37:49.622 DEBUG --- [  Thread-328] l.s.a.lambda_executors     : Checking if there are idle containers ...
+2022-07-27T19:38:49.628 DEBUG --- [  Thread-364] l.s.a.lambda_executors     : Checking if there are idle containers ...

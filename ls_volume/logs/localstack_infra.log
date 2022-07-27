@@ -1,0 +1,8 @@
+
+LocalStack version: 1.0.1
+LocalStack Docker container id: 6db8d52a14c2
+LocalStack build date: 2022-07-20
+LocalStack build git hash: 1136f995
+
+Starting DNS servers (tcp/udp port 53 on 0.0.0.0)...
+Ready.

@@ -1,0 +1,3 @@
+name: object_on_object_created_error_demo
+runtime: nodejs
+description: demo to recreate error for localstack debugging
