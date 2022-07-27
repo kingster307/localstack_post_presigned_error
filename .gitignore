@@ -4,5 +4,5 @@ venv
 **/.pytest_cache
 **/__pycache__
 **/__pycache__/
-ls_volume
+ls_volume/
 pulumi_output.json
