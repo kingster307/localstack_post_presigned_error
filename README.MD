@@ -7,6 +7,11 @@
    2) flow of test 
       1) hit apigw route get presigned post url
       2) post to url 
-      3) this should trigger [s3_on_object_created_processing](./s3_on_object_created_processing/lambda_function.py)
-         1) This should emit logs but doesn't
-      4) run `make get-logs-aws` to view logs
+      3) S3 presigned post triggers lambda
+
+## Issue
+getting 500 on the POST.
+
+Tests have some comments within for easier debugging [here](./tests/upload_fail_test.py)
+
+logs can be seen [here](./tests/logs)
