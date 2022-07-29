@@ -1,7 +1,6 @@
 import urllib.parse
 
 
-# if invoked with onObjectCreated then should output logs
 def lambda_handler(event, context):
     objects = []
     for record in event["Records"]:

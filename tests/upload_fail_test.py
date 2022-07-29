@@ -4,7 +4,7 @@ import requests
 
 
 def presigned_url_lambda_apigw_url() -> str:
-    with open(f"../pulumi_output.json", "r") as read_file:
+    with open("../pulumi_output.json", "rb") as read_file:
         pulumi_output = json.load(read_file)
 
     api_id = pulumi_output["api"]["restAPI"]["id"]
@@ -66,7 +66,6 @@ def test_error_no_files():
         # seems like localstack is caching & reusing previous results
         # ============================================================================
         # produces 500 error -> view ./logs for more infor
-        # make post request to presigned url | should trigger lambda & display logs
         res2 = format_res(requests.post(change_host_of_url(post_url), data=post_fields, files=files))
 
         print(res2)
